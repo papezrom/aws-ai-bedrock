@@ -1,2 +1,43 @@
 *.zip
+*.gz
+*.tar
 .terraform
+terraform.tfstate*
+*.tfplan
+
+# Ignore all files in approval_flow/ApprovalHandlerLambda subdirectories
+modules/approval_flow/resources/ApprovalHandlerLambda/*
+
+!modules/approval_flow/resources/ApprovalHandlerLambda/app.py
+!modules/approval_flow/resources/ApprovalHandlerLambda/*.html
+!modules/approval_flow/resources/ApprovalHandlerLambda/requirements.txt
+
+# Ignore all files in approval_flow/GenerateContentLambda subdirectories
+modules/approval_flow/resources/GenerateContentLambda/*
+
+!modules/approval_flow/resources/GenerateContentLambda/app.py
+!modules/approval_flow/resources/GenerateContentLambda/requirements.txt
+
+# Ignore all files in approval_flow/PublishContentLambdaS3 subdirectories
+modules/approval_flow/resources/PublishContentLambdaS3/*
+
+!modules/approval_flow/resources/PublishContentLambdaS3/app.py
+!modules/approval_flow/resources/PublishContentLambdaS3/requirements.txt
+
+# Ignore all files in approval_flow/PublishContentLambdaVpc subdirectories
+modules/approval_flow/resources/PublishContentLambdaVpc/*
+
+!modules/approval_flow/resources/PublishContentLambdaVpc/app.py
+!modules/approval_flow/resources/PublishContentLambdaVpc/requirements.txt
+
+# Ignore all files in approval_flow/TranslateLambda subdirectories
+modules/approval_flow/resources/TranslateLambda/*
+
+!modules/approval_flow/resources/TranslateLambda/lambda_function.py
+!modules/approval_flow/resources/TranslateLambda/requirements.txt
+
+# Keep important configuration and definition files
+!modules/approval_flow/resources/*.json
+!modules/approval_flow/resources/*.html
+!modules/approval_flow/resources/payload.json
+!modules/approval_flow/resources/sfn_state_machine_definition.json
