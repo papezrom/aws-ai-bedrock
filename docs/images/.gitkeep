@@ -1,0 +1,13 @@
+# Images Directory
+
+This directory contains architectural diagrams and workflow visualizations for the AWS AI Bedrock Content Approval Workflow project.
+
+## Files:
+- `deployment-architecture.png` - High-level deployment architecture diagram
+- `stepfunction-workflow.png` - Step Functions workflow visualization
+
+## Guidelines:
+- Use PNG format for better quality and transparency support
+- Recommended resolution: 1920x1080 or higher for detailed diagrams
+- Keep file sizes reasonable (< 2MB) for faster loading
+- Use consistent color schemes and AWS official icons when possible
